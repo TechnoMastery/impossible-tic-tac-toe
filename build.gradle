@@ -23,8 +23,8 @@ publishing {
         maven {
             url = uri ("https://maven.pkg.github.com/TechnoMastery/impossible-tic-tac-toe")
             credentials {
-                username = project.findProperty("grp.user")
-                password = project.findProperty("grp.key")
+                username = project.findProperty("gpr.user")
+                password = project.findProperty("gpr.key")
             }
         }
     }
