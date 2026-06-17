@@ -17,11 +17,11 @@ public class TicTacToeTab extends BaseVTab<VBox> {
 
     @Override
     protected String getTitle() {
-        return Translations.get("ticTacToeTab:tabs.yourTab.title");
+        return Translations.get("impossibleTicTacToe:tabs.ticTacToeTab.title");
     }
 
     @Override
     public String getName() {
-        return Translations.get("ticTacToeTab:tabs.yourTab.name");
+        return Translations.get("impossibleTicTacToe:tabs.ticTacToeTab.name");
     }
 }
