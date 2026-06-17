@@ -1,4 +1,4 @@
-package your.packagename.tabs.all;
+package net.minheur.impossibleTicTacToe.tabs.all;
 
 import javafx.scene.layout.VBox;
 import net.minheur.potoflux.screen.tabs.BaseVTab;

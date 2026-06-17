@@ -1,4 +1,4 @@
-package your.packagename;
+package net.minheur.impossibleTicTacToe;
 
 import net.minheur.potoflux.PotoFlux;
 import net.minheur.potoflux.loader.PotoFluxLoadingContext;
@@ -7,19 +7,19 @@ import net.minheur.potoflux.loader.mod.ModEventBus;
 import net.minheur.potoflux.loader.mod.events.RegisterLangEvent;
 import net.minheur.potoflux.logger.LogCategories;
 import net.minheur.potoflux.logger.PtfLogger;
-import your.packagename.tabs.Tabs;
-import your.packagename.translations.ExampleModTranslations;
+import net.minheur.impossibleTicTacToe.tabs.Tabs;
+import net.minheur.impossibleTicTacToe.translations.ExampleModTranslations;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Properties;
 
-@Mod(modId = ExampleMod.MOD_ID, version = "1.0", compatibleVersions = {"7.0"}, compatibleVersionUrl = "https://technomastery.github.io/PotoFluxAppData/modVersions/template.json") // WARNING: use only one of the two compatible version system. When both are present, the local one is always used. the online one is for you to follow the link and get an example.
-public class ExampleMod {
-    public static final String MOD_ID = "yourmodid";
+@Mod(modId = ImpossibleTicTacToe.MOD_ID, version = "1.0", compatibleVersions = {"7.0"}, compatibleVersionUrl = "https://technomastery.github.io/PotoFluxAppData/modVersions/impossibleTicTacToe.json")
+public class ImpossibleTicTacToe {
+    public static final String MOD_ID = "impossibleTicTacToe";
 
-    public ExampleMod() {
+    public ImpossibleTicTacToe() {
         ModEventBus modEventBus = PotoFluxLoadingContext.get().getModEventBus();
 
         modEventBus.addListener(Tabs::register);
@@ -41,7 +41,7 @@ public class ExampleMod {
     public static String getVersion() {
         try {
             Properties props = new Properties();
-            props.load(ExampleMod.class.getResourceAsStream("/modVersion.properties"));
+            props.load(ImpossibleTicTacToe.class.getResourceAsStream("/modVersion.properties"));
 
             return props.getProperty("version");
         } catch (IOException e) {
